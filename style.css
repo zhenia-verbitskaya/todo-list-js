@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: #d6f5f5;
+  letter-spacing: 3px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  border: 2px solid #145252;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.tasks__title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #145252;
+}
+
+.tasks__input {
+  width: 80%;
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid #145252;
+  border-radius: 10px;
+  align-self: center;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 18px;
+  color: #145252;
+  letter-spacing: 3px;
+}
+
+.tasks__input::placeholder {
+  color: #145252;
+}
+
+.tasks__button {
+  width: 80%;
+  height: 40px;
+  font-size: 18px;
+  color: #5bd7d7;
+  letter-spacing: 3px;
+  align-self: center;
+  background-color: #0f3e3e;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: all 200ms;
+}
+
+.tasks__button:hover {
+  transform: scale(1.02);
+}
+
+.tasks__button:active {
+  transform: scale(1);
+}
+
+.tasks__empty {
+  text-align: center;
+  color: #145252;
+  font-size: 20px;
+}
+
+.tasks__list {
+  list-style: none;
+}
+
+.list__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #145252;  
+}
+
+.list__item:nth-child(odd) {
+  background-color: #5bd7d7;
+}
+
+.list__item:nth-child(even) {
+  background-color: #adebeb;
+}
+
+.list__text {
+  width: 80%;
+  text-align: justify;
+}
+
+.list__button {
+  width: 100px;
+  height: 40px;
+  background-color: #0f3e3e;
+  color: #5bd7d7;
+  cursor: pointer;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  transition: all 200ms;
+}
+
+.list__button:hover {
+  transform: scale(1.02);
+}
+
+.list__button:active {
+  transform: scale(1);
+}
